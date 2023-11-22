@@ -31,6 +31,7 @@ namespace Datatpes.TypeConversion
             int num1 = 350;
             byte num2 = (byte) num1;//might lose data
             Console.WriteLine(num2);
+            
         }
 
         public void nonCompatibleTypes()
@@ -41,6 +42,7 @@ namespace Datatpes.TypeConversion
             //if not possible it will throw an exception 
             int num2 = Convert.ToInt32(num1);
             Console.WriteLine(num2);
+            
 
             string b1 = "true";
             bool b2= Convert.ToBoolean(b1);
