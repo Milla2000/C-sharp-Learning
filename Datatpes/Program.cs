@@ -47,6 +47,9 @@ name1 = "Jane Doe";
 //Console.WriteLine(name1);
 
 
-var str = new StringClass();
+//var str = new StringClass();
 //str.stringPractice();
-str.immutabilityPractice();
+//str.immutabilityPractice();
+
+var str= new SomeStringMethods();
+str.stringMethodPractice();

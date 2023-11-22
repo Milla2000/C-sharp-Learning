@@ -97,10 +97,10 @@ namespace Datatpes.StringExamples
 
         public void immutabilityPractice()
         {
-
+            var str1 = "      ";
 
             StringBuilder sb = new StringBuilder();
-            string text = "Hello";
+            string text = "   Hello world  ";
             int num1 = 0;
             Stopwatch watch = new Stopwatch();
             watch.Start();
