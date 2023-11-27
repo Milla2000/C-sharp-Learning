@@ -102,6 +102,6 @@ for(int i = 0; i < 8; i++)
 }
 
 
-//ternary - shorform of if statement
+//ternary - shortform of if statement
 var message = age > 18 ? " He is an adult" : "He is a Child";
 Console.WriteLine(message);
