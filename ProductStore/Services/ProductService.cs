@@ -55,15 +55,23 @@ namespace ProductStore.Services
 
         public async Task<List<Product>> GetProductsAsync()
         {
-           var response = await  _httpClient.GetAsync(URL);
-           var content = await response.Content.ReadAsStringAsync();//string
-           var products=JsonConvert.DeserializeObject<List<Product>>(content);
-           if (response.IsSuccessStatusCode && products!=null)
-           {
-                return products;
-           }
-           return new List<Product>();
-            
+            try
+            {
+                var response = await _httpClient.GetAsync(URL);
+                var content = await response.Content.ReadAsStringAsync();//string
+                var products = JsonConvert.DeserializeObject<List<Product>>(content);
+                if (response.IsSuccessStatusCode && products != null)
+                {
+                    return products;
+                }
+                
+            }catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+
+            return new List<Product>();
+
         }
 
         public async Task<string> UpdateProduct(int id, AddProduct updatedProduct)

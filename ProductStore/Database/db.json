@@ -11,6 +11,12 @@
       "Description": "logitech",
       "Price": 350,
       "id": 2
+    },
+    {
+      "Name": "laptop",
+      "Description": "lenovo",
+      "Price": 50000,
+      "id": 3
     }
   ]
 }
