@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace lambdaExpressions
 {
-    internal class Employee
+    public  class Employee
     {
+        public int Id { get; set; }
+        public string Name { get; set; } = string.Empty;
+
+        public int Salary { get; set; }
     }
 }
